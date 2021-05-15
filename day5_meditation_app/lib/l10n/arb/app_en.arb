@@ -2,55 +2,55 @@
     "meditateTitle": "MEDITATE",
     "@meditateTitle": {
         "description": ""
-    }
+    },
     "meditationTitle": "MEDITATION",
     "@meditationTitle": {
         "description": ""
-    }
+    },
     "meditationApp": "Meditation App",
     "@meditationApp": {
         "description": ""
-    }
+    },
     "loremDescription": "Adipisicing culpa reprehenderit commodo velit\n mollit irure Lorem officia ipsum adipisicing\n anim elit veniam consectetur.",
     "@loremDescription": {
         "description": ""
-    }
+    },
     "recommendedPlaylist": "Recommended Playlist",
     "@recommendedPlaylist": {
         "description": ""
-    }
+    },
     "topCreator": "Top Creator",
     "@topCreator": {
         "description": ""
-    }
+    },
     "nowPlaying": "Now Playing",
     "@nowPlaying": {
         "description": ""
-    }
+    },
     "otherAudio": "Other Audio in the Playlist",
     "@otherAudio": {
         "description": ""
-    }
+    },
     "email": "Email",
     "@email": {
         "description": ""
-    }
+    },
     "password": "Password",
     "@password": {
         "description": ""
-    }
+    },
     "login": "Login",
     "@login": {
         "description": ""
-    }
+    },
     "password": "Password",
     "@password": {
         "description": ""
-    }
+    },
     "doNotHaveAccount": "Don't have an account yet?",
     "@doNotHaveAccount": {
         "description": ""
-    }
+    },
     "createAccount": "Create an Account",
     "@createAccount": {
         "description": ""
