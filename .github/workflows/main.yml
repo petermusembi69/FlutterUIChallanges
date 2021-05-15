@@ -12,15 +12,19 @@ jobs:
 
       - name: Install Dependencies
         run: flutter packages get
+        working-directory: day5_meditation_app
       
 #       - name: Run code generation
 #         run: flutter packages run build_runner build
 
       - name: Format
         run: flutter format --set-exit-if-changed lib test
+        working-directory: day5_meditation_app
+
 
       - name: Analyze
         run: flutter analyze lib test
+        working-directory: day5_meditation_app
 
 #       - name: Run tests
 #         run: flutter test --no-pub --coverage --test-randomize-ordering-seed random
