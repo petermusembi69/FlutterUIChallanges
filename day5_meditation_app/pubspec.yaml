@@ -28,6 +28,9 @@ flutter:
     - assets/images/
     - assets/fonts/
   fonts:
+    - family: CustomIcons
+      fonts:
+        - asset: assets/fonts/customIcons/Film-play.ttf
     - family: Poppins
       fonts:
         - asset: assets/fonts/poppins/Poppins-Bold.otf
