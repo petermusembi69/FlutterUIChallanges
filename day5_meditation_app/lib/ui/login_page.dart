@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:day5_meditation_app/ui/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:day5_meditation_app/l10n/l10n.dart';
@@ -15,6 +13,13 @@ class LoginPage extends StatefulWidget {
 class _LoginPageState extends State<LoginPage> {
   @override
   void initState() {
+    SystemChrome.setSystemUIOverlayStyle(
+      const SystemUiOverlayStyle(
+        statusBarColor: Colors.transparent,
+        statusBarIconBrightness: Brightness.light,
+        statusBarBrightness: Brightness.light,
+      ),
+    );
     super.initState();
   }
 
@@ -137,7 +142,7 @@ class _LoginPageState extends State<LoginPage> {
                               ),
                               MaterialButton(
                                 onPressed: () {
-                                  Navigator.pushReplacement(
+                                  Navigator.push(
                                     context,
                                     MaterialPageRoute(
                                       builder: (context) => HomePage(),
