@@ -1,3 +1,6 @@
+import 'dart:html';
+
+import 'package:day5_meditation_app/ui/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:day5_meditation_app/l10n/l10n.dart';
 import 'package:flutter/services.dart';
@@ -133,15 +136,28 @@ class _LoginPageState extends State<LoginPage> {
                                 ),
                               ),
                               MaterialButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Navigator.pushReplacement(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => HomePage(),
+                                    ),
+                                  );
+                                },
                                 color: Colors.orange,
                                 minWidth: double.maxFinite,
+                                padding: EdgeInsets.symmetric(
+                                    horizontal: 20, vertical: 10),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
                                 child: Text(
                                   l10n.login,
                                   style: TextStyle(
                                     fontFamily: 'Poppins',
                                     fontWeight: FontWeight.w600,
                                     color: Colors.white,
+                                    fontSize: 16,
                                   ),
                                 ),
                               ),
