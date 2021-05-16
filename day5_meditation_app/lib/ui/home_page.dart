@@ -1,3 +1,4 @@
+import 'package:day5_meditation_app/ui/play_list_page.dart';
 import 'package:flutter/material.dart';
 import 'package:day5_meditation_app/l10n/l10n.dart';
 import 'package:flutter/services.dart';
@@ -56,7 +57,7 @@ class _HomePageState extends State<HomePage> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(top:8.0),
+                          padding: const EdgeInsets.only(top: 8.0),
                           child: Text(
                             l10n.meditationTitle,
                             style: TextStyle(
@@ -196,28 +197,28 @@ class _HomePageState extends State<HomePage> {
               Icons.music_note,
               size: 30,
             ),
-            label: 'Home',
+            label: 'Music',
           ),
           BottomNavigationBarItem(
             icon: Icon(
               CustomIcons.film_play,
               size: 30,
             ),
-            label: 'Business',
+            label: 'Play List',
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.favorite,
               size: 30,
             ),
-            label: 'School',
+            label: 'Favourite',
           ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.person,
               size: 30,
             ),
-            label: 'School',
+            label: 'Profile',
           ),
         ],
         currentIndex: _selectedIndex,
@@ -228,6 +229,14 @@ class _HomePageState extends State<HomePage> {
   }
 
   void _onItemTapped(int index) {
+    if (index == 1) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => PlayListPage(),
+        ),
+      );
+    }
     setState(() {
       _selectedIndex = index;
     });
