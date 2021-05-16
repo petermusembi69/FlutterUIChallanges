@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:day5_meditation_app/l10n/l10n.dart';
 import 'package:flutter/services.dart';
 
+
 class PlayListPage extends StatefulWidget {
   PlayListPage({Key? key}) : super(key: key);
 
@@ -12,6 +13,7 @@ class PlayListPage extends StatefulWidget {
 
 class _PlayListPageState extends State<PlayListPage> {
   @override
+
   void initState() {
     SystemChrome.setSystemUIOverlayStyle(
       const SystemUiOverlayStyle(
@@ -245,4 +247,5 @@ class PlayerPainter extends CustomPainter {
 
   @override
   bool shouldRebuildSemantics(PlayerPainter oldDelegate) => false;
+
 }
