@@ -42,7 +42,7 @@ class AudioCard extends StatelessWidget {
                       fontFamily: 'Poppins',
                       fontWeight: FontWeight.w400,
                       fontSize: 16,
-                      color: Colors.green.shade200,
+                      color: Colors.grey.shade600,
                     ),
                   ),
                 ],

@@ -86,7 +86,8 @@ class _PlayListPageState extends State<PlayListPage> {
                               ),
                             ),
                             Padding(
-                              padding: const EdgeInsets.only(top: 2.0),
+                              padding:
+                                  const EdgeInsets.only(top: 2.0, bottom: 10),
                               child: Text(
                                 'Moshe P. Weisblum',
                                 style: TextStyle(
@@ -111,7 +112,7 @@ class _PlayListPageState extends State<PlayListPage> {
                                 ),
                                 CustomPaint(
                                   painter: PlayerPainter(),
-                                  // size: Size.copy(),
+                                  size: Size(MediaQuery.of(context).size.width * 0.55, double.minPositive),
                                 ),
                                 Text(
                                   '21:07',
@@ -204,6 +205,7 @@ class _PlayListPageState extends State<PlayListPage> {
                     Container(
                       height: MediaQuery.of(context).size.height * 0.42,
                       child: ListView(
+                        padding: EdgeInsets.all(0),
                         scrollDirection: Axis.vertical,
                         children: [
                           for (var i = 0; i < 4; i++) AudioCard(playList[i]),
@@ -233,9 +235,9 @@ class PlayerPainter extends CustomPainter {
       ..strokeCap = StrokeCap.round
       ..color = Colors.orange.withOpacity(0.9);
 
-    canvas.drawLine(Offset(-120, 0), Offset(120, 0), paint);
-    canvas.drawLine(Offset(-120, 0), Offset(0, 0), trackPaint);
-    canvas.drawCircle(Offset(0, 0), 7, trackPaint);
+    canvas.drawLine(Offset(0, 0), Offset(size.width, 0), paint);
+    canvas.drawLine(Offset(0, 0), Offset(size.width*0.5, 0), trackPaint);
+    canvas.drawCircle(Offset(size.width*0.5, 0), 7, trackPaint);
   }
 
   @override

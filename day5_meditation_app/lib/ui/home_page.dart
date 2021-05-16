@@ -1,8 +1,8 @@
 import 'package:day5_meditation_app/ui/play_list_page.dart';
+import 'package:day5_meditation_app/utils/_index.dart';
 import 'package:flutter/material.dart';
 import 'package:day5_meditation_app/l10n/l10n.dart';
 import 'package:flutter/services.dart';
-import 'package:day5_meditation_app/utils/icons.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
       body: Stack(
         children: [
           FractionallySizedBox(
-            heightFactor: 0.25,
+            heightFactor: 0.28,
             alignment: Alignment.topCenter,
             child: Stack(
               children: [
@@ -57,7 +57,7 @@ class _HomePageState extends State<HomePage> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(top: 8.0),
+                          padding: const EdgeInsets.only(top: 16.0),
                           child: Text(
                             l10n.meditationTitle,
                             style: TextStyle(
@@ -87,7 +87,7 @@ class _HomePageState extends State<HomePage> {
           Align(
             alignment: Alignment.bottomCenter,
             child: FractionallySizedBox(
-              heightFactor: 0.75,
+              heightFactor: 0.72,
               child: SingleChildScrollView(
                 child: Container(
                   height: MediaQuery.of(context).size.height * 0.64,
@@ -151,26 +151,44 @@ class _HomePageState extends State<HomePage> {
                           children: [
                             Padding(
                               padding: EdgeInsets.only(left: 0, right: 20),
-                              child: Image.asset(
-                                'assets/images/creatorcard.png',
-                                width: MediaQuery.of(context).size.width * 0.72,
-                                fit: BoxFit.cover,
+                              child: ClipRRect(
+                                borderRadius: const BorderRadius.all(
+                                  Radius.circular(5),
+                                ),
+                                child: Image.asset(
+                                  'assets/images/creatorcard.png',
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.72,
+                                  fit: BoxFit.cover,
+                                ),
                               ),
                             ),
                             Padding(
                               padding: EdgeInsets.only(left: 0, right: 20),
-                              child: Image.asset(
-                                'assets/images/creatorcard.png',
-                                width: MediaQuery.of(context).size.width * 0.72,
-                                fit: BoxFit.cover,
+                              child: ClipRRect(
+                                borderRadius: const BorderRadius.all(
+                                  Radius.circular(5),
+                                ),
+                                child: Image.asset(
+                                  'assets/images/creatorcard.png',
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.72,
+                                  fit: BoxFit.cover,
+                                ),
                               ),
                             ),
                             Padding(
                               padding: EdgeInsets.only(left: 0, right: 20),
-                              child: Image.asset(
-                                'assets/images/creatorcard.png',
-                                fit: BoxFit.cover,
-                                width: MediaQuery.of(context).size.width * 0.72,
+                              child: ClipRRect(
+                                borderRadius: const BorderRadius.all(
+                                  Radius.circular(5),
+                                ),
+                                child: Image.asset(
+                                  'assets/images/creatorcard.png',
+                                  fit: BoxFit.cover,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.72,
+                                ),
                               ),
                             ),
                           ],

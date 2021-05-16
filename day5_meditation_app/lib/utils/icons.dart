@@ -1,4 +1,4 @@
-import 'package:flutter/widgets.dart';
+part of day5_utils;
 
 class CustomIcons {
   CustomIcons._();
